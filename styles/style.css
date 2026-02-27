@@ -1,6 +1,11 @@
 body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-width: 1100px;
   max-width: 1600px;
+  height: 100vh;
   font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -10,13 +15,19 @@ body {
 .header {
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
   justify-content: space-between;
   background-color: #ffffff;
   background-image: url(../images/background_header.svg);
   background-size: cover;
+  width: 100%;
   min-height: 720px;
   max-height: 800px;
-  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -27,17 +38,13 @@ body {
   padding-top: 30px;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-}
-
 .nav-links {
   display: flex;
   column-gap: 20px;
   list-style: none;
   padding-right: 26px;
   padding-top: 30px;
+  padding-left: 0;
   margin-top: 0;
 }
 
@@ -56,6 +63,7 @@ body {
   font-size: 58px;
   line-height: 72px;
   letter-spacing: -1px;
+  top: 183px;
 }
 
 .span-accent {
@@ -76,6 +84,8 @@ body {
 }
 
 .header-description {
+  position: relative;
+  top: 211px;
   margin: 0;
   position: relative;
   padding-left: 80px;
@@ -85,7 +95,9 @@ body {
 }
 
 .header-info {
+  position: relative;
   display: flex;
+  flex-basis: 100%;
   padding-left: 80px;
   padding-right: 80px;
   padding-bottom: 40px;
@@ -98,3 +110,105 @@ body {
   font-weight: 500;
   color: #6f6f6f;
 }
+
+/*Styles for content*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #ffd6c5;
+  background-image: url(../images/background_reservation.svg);
+  background-size: cover;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  max-width: 385px;
+  margin-bottom: 120px;
+}
+
+.form__title {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.form__name,
+.form__date,
+.form__num,
+.form__email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form__input {
+  border-width: 1px;
+  border-radius: 4px;
+  border-color: #838383;
+  color: #838383;
+  box-sizing: border-box;
+  height: 60px;
+  padding: 15px 20px 15px 20px;
+  margin-bottom: 32px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__label {
+  margin-bottom: 8px;
+}
+
+.form__button {
+  width: 100%;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #e96e3a;
+  border: 0;
+  color: #ffffff;
+  padding: 0;
+  margin-bottom: 32px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form__input-checkbox {
+  border-radius: 2px;
+  border-color: #4f4f4f;
+  height: 20px;
+  width: 20px;
+}
+
+/*Styles for footer*/
