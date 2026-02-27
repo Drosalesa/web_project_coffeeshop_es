@@ -212,3 +212,29 @@ body {
 }
 
 /*Styles for footer*/
+
+.contacts {
+  display: flex;
+  width: 100%;
+  background-color: #d35722;
+}
+
+.circle {
+  position: absolute;
+  z-index: 0;
+  border-radius: 100%;
+  background-color: #e96e3a;
+  width: 340px;
+  height: 340px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.media__list {
+  list-style: none;
+}
